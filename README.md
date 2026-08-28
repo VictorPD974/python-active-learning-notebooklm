@@ -1,14 +1,17 @@
 # python-active-learning-notebooklm
 
 🚀 Professor IA de Python: Metodologia de Aprendizagem Ativa com NotebookLM
+
 Este repositório foi desenvolvido como entrega oficial para o Desafio de Projeto da DIO (Digital Innovation One), cujo objetivo é explorar o uso de Inteligência Artificial como uma ferramenta estratégica de aprendizagem ativa e curadoria de conhecimento.
 
 Aqui, estruturamos um Professor IA de Python utilizando o NotebookLM da Google. O modelo foi abastecido com uma curadoria robusta de 26 fontes técnicas de nível universitário e profissional, permitindo simular sessões de mentoria de alta performance, projetar um cronograma de estudos personalizado e estruturar resoluções de problemas em tempo real.
 
 🎯 Contexto e Objetivos
+
 O aprendizado de programação muitas vezes falha quando o estudante assume uma postura passiva. O propósito deste projeto é demonstrar como a IA Generativa pode atuar como um tutor socrático individualizado, que não fornece respostas prontas de bandeja, mas sim guia o estudante através de perguntas, desafios de código incrementais e análise crítica de erros, promovendo o pensamento independente e a autonomia técnica.
 
 Objetivos de Estudo:
+
 Domínio da Lógica e Sintaxe Acadêmica: Consolidar desde a base de algoritmos, fluxogramas e expressões matemáticas até estruturas de dados avançadas e controle de fluxo.
 Adoção de Boas Práticas (Código Pythonic): Escrever código limpo de nível profissional, focando em legibilidade, performance de execução e eficiência de memória.
 Prática de Automação de Sistemas: Aplicar scripts para automação de tarefas cotidianas de escritório (leitura de planilhas Excel, manipulação de PDFs/Word, raspagem de dados web e automação de interface).
@@ -17,6 +20,7 @@ Engenharia de Prompts: Documentar a interação ativa e estratégica com a IA, d
 Para garantir que o material cobrisse toda a trilha pedagógica de Python sem poluir o repositório, as 26 fontes integradas ao NotebookLM foram agrupadas em três eixos temáticos estruturados. Desta forma, o material cobre desde a teoria de algoritmos até as melhores práticas de desenvolvimento corporativo:
 
 🎓 1. Eixo Acadêmico (Curso "Algoritmos e Programação de Computadores I" - 21 Videoaulas)
+
 Este módulo fornece a base teórica e matemática essencial para entender a computação científica e o design de software estruturado:
 
 A biblioteca de vídeo aulas pode ser acessada em: https://www.youtube.com/playlist?list=PLxI8Can9yAHcUdIGv9aaZqkt-z0fepFa8
