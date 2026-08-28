@@ -1,9 +1,11 @@
 # python-active-learning-notebooklm
 🚀 Professor IA de Python: Metodologia de Aprendizagem Ativa com NotebookLM
+
 Este repositório foi desenvolvido como entrega do Desafio de Projeto da DIO (Digital Innovation One), focado em explorar o uso de Inteligência Artificial para a criação de um ecossistema de aprendizagem ativa.
 Aqui, documentamos a estruturação de um Professor IA de Python utilizando o NotebookLM da Google. O modelo foi abastecido com uma curadoria rigorosa de literatura técnica de nível mundial, permitindo simular sessões de mentoria de alta performance, projetar um cronograma de estudos personalizado e realizar sessões interativas de revisão e resolução de problemas.
 ---
 🎯 Contexto e Objetivos
+
 O aprendizado de programação muitas vezes falha quando o estudante assume uma postura puramente passiva (assistindo a vídeos ou copiando códigos sem entender a lógica). O objetivo deste projeto é demonstrar como a IA Generativa pode atuar como um tutor socrático individualizado, que não fornece respostas fáceis, mas sim guia o estudante através de perguntas, desafios de código e análise de tracebacks, promovendo o pensamento crítico.
 Objetivos de Estudo:
 Domínio dos Fundamentos de Python: Consolidar sintaxe, estruturas de dados mutáveis/imutáveis, controle de fluxo e modularização.
@@ -12,6 +14,7 @@ Prática Automatizada e Resolução de Problemas cotidianos: Aplicar Python na a
 Documentação e Engenharia de Prompts: Registrar os testes de prompts e refinamentos lógicos realizados para superar as limitações das IAs generativas e demonstrar maturidade técnica.
 ---
 📚 Curadoria de Fontes
+
 A base de conhecimento integrada ao NotebookLM é composta por 5 fontes de altíssima relevância técnica, cobrindo desde a alfabetização lógica até práticas avançadas de engenharia de software e documentação oficial:
 Pense em Python (2ª Edição) – Allen B. Downey: Um guia metodológico focado no desenvolvimento do pensamento computacional e na resolução de problemas complexos de forma incremental [8]. Introduz termos fundamentais como scaffolding e a famosa depuração do pato de borracha [11, 23, 24].
 Curso Intensivo de Python – Eric Matthes: Uma das melhores referências mundiais de aprendizado prático e baseado em projetos reais (jogos de arcade, ciência de dados e desenvolvimento web) [1, 5, 6].
@@ -20,6 +23,7 @@ Python Eficaz: 59 Maneiras Específicas de Escrever Melhor Python – Brett Slat
 Documentação Oficial (Python.org): O hub central da linguagem, fornecendo especificações atualizadas de sintaxe, guias de estilo e atualizações de novas versões estáveis [SOURCE_SUMMARY].
 ---
 🛠️ Engenharia de Prompts e "Cicatrizes" (Troubleshooting)
+
 Abaixo estão registrados os prompts estratégicos testados e as dificuldades encontradas ao longo do processo de modelagem da IA para o papel de "Professor Socrático".
 1. Prompt de Definição de Persona (O Professor Socrático)
 Objetivo: Evitar que a IA cuspa o código pronto e forçá-la a agir como um mentor que estimula o raciocínio.
@@ -33,6 +37,7 @@ Prompt Testado:
 Resposta Grounded: O interpretador utiliza blocos `try-except` para interceptar o `ZeroDivisionError` e mostrar uma mensagem amigável [3]. É perigoso exibir o traceback bruto porque invasores maliciosos podem ver o nome do arquivo, caminhos internos do sistema e trechos de código com falha, facilitando o planejamento de ataques direcionados ao sistema [4].
 ---
 🩹 "Cicatrizes" de Desenvolvimento (Troubleshooting com a IA)
+
 Durante as interações, foram identificados alguns comportamentos padrão da IA que precisaram ser corrigidos com refinamento de prompts:
 Problema Identificado (Cicatriz)	Causa Raiz na IA	Solução Prática no Prompt (Troubleshooting)	Referência de Grounding
 Geração de soluções completas de imediato	Tendência do modelo LLM de satisfazer o usuário entregando o código pronto em uma única interação.	Restrição Socrática: Exigir que a IA termine toda resposta com uma única pergunta ou mini-desafio conceitual, declarando explicitamente: "Código completo é estritamente proibido nesta etapa."	Método de desenvolvimento incremental [11, 15]
@@ -40,6 +45,7 @@ Uso de pacotes obsoletos em exemplos de automação	A IA tentou usar o método a
 Uso de print() para depuração em produção	A IA inicialmente sugeriu colocar diversos prints pelo código para entender o fluxo de um script de automação.	Filtro de Boas Práticas: Adicionar ao prompt a diretiva "Não faça debug com print(). Use o módulo logging ou o debugger interativo pdb." [86, 107]. O logging permite desabilitar mensagens com uma linha única (`logging.disable()`), algo impossível com `print()` [107].	Logging e Depuração [107, 111]
 ---
 📖 Miniguia de Estudos de Python (Resultado Consolidado)
+
 🗺️ Roteiro de Estudos em 4 Fases
 📍 Fase 1: Sintaxe, Estruturas de Dados e Pensamento Lógico
 Sintaxe de Fatiamento (Slicing): Permite extrair fatias ou segmentos de sequências como listas e strings utilizando a sintaxe `lista\[start:end]` [16, 38]. Deve-se evitar o uso simultâneo de `start`, `end` e `stride` (salto) em uma única operação para não prejudicar a legibilidade [39].
