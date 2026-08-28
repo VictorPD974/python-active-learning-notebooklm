@@ -30,9 +30,13 @@ Este módulo fornece a base teórica e matemática essencial para entender a com
 A biblioteca de vídeo aulas pode ser acessada em: https://www.youtube.com/playlist?list=PLxI8Can9yAHcUdIGv9aaZqkt-z0fepFa8
 
 Lógica & Fluxo: Noção de Algoritmos, Fluxogramas, Variáveis, Tipos de Dados, Expressões Aritméticas e Operadores, Expressões Lógicas e Operadores.
+
 Estruturas de Condição e Desvio: Condições de Uma ou Duas Vias, Condições de Três ou Mais Vias.
+
 Estruturas de Repetição: Repetição (for), Repetição (while), Outros Comandos: break, continue e pass.
+
 Coleções e Manipulação: Listas, Tuplas e Operadores, Listas Multidimensionais, Strings.
+
 Prática e Arquitetura: Definição de Funções, Biblioteca Padrão Python, Depuração de Programas, Documentação de Programas, Programas em Python, print(), input() e eval(), Sobre Python.
 
 📖 2. Eixo de Literatura Técnica Especializada (4 Livros-Base)
@@ -55,17 +59,30 @@ Abaixo estão registrados os prompts estratégicos testados e as dificuldades en
 1. Prompt de Definição de Persona (O Professor Socrático)
 Objetivo: Evitar que a IA entregue o código pronto de bandeja e forçá-la a agir como um mentor que estimula o raciocínio incremental.
 Prompt Testado:
+
 "Você é meu Professor de Python baseado na nossa base de conhecimento. Quero aprender sobre fatiamento de listas (slicing) de maneira profunda. Não me dê códigos longos logo de cara. Apresente o conceito teórico baseado nas fontes, dê um exemplo curto de 3 linhas e faça uma pergunta interativa para eu tentar resolver. Se eu errar, me dê dicas lógicas usando scaffolding, sem me dar a resposta."
 
 Resultado: A IA explicou a sintaxe lista[start:end] (início inclusivo, fim exclusivo) e gerou um desafio interativo sobre strings e fatiamento.
+
 🩹 "Cicatrizes" de Desenvolvimento (Troubleshooting entre o Acadêmico e o Profissional)
+
 Durante as sessões de estudo com a IA, mapeamos as inconsistências que ocorrem quando unimos o currículo acadêmico clássico ao código de mercado. Veja como solucionamos esses desafios no prompt:
 
 Conceito / Problema	Risco / Desafio Encontrado	Solução / Refinamento no Prompt	Referência e Aprendizado
-A Armadilha do eval()	Videoaulas ensinam eval() para avaliar expressões rapidamente. Porém, no desenvolvimento profissional, o eval() é uma falha grave de segurança que permite execução de código arbitrário.	Prompt de Segurança: "Explique-me como processar entradas numéricas dinâmicas sem utilizar eval(), preferindo conversões explícitas com int() ou float()."	Vídeo print(), input() e eval() & Curso Intensivo de Python
-Referência de Listas Multidimensionais	Inicializar matrizes usando multiplicação como [[0]*3]*3 cria referências rasas, fazendo com que alterar uma célula modifique toda a coluna.	Prompt de Boas Práticas: "Como criar listas multidimensionais independentes sem efeitos colaterais de referência de memória?"	Vídeo Listas Multidimensionais & Python Eficaz (uso de List Comprehensions)
-Gargalo de Memória vs. List Comprehensions	Em grandes volumes de dados (ex: automação de arquivos), list comprehensions comuns consomem muita RAM ao carregar tudo na memória de uma vez.	Prompt de Otimização: "Substitua minhas list comprehensions por expressões geradoras (generators) e explique a economia de memória em nível de processo."	Python Eficaz (Item 19: Expressões Geradoras) & Pense em Python
-Uso de print() para Depuração	A IA inicialmente sugeriu colocar diversos prints pelo código para rastrear erros, o que polui o código de produção.	Prompt de Monitoramento: "Não faça debug com print(). Estruture o código utilizando o módulo nativo logging com diferentes níveis (INFO, DEBUG, ERROR)."	Vídeo Depuração de programas & Automatize Tarefas Maçantes
+
+A Armadilha do eval()	Videoaulas ensinam eval() para avaliar expressões rapidamente. Porém, no desenvolvimento profissional, o eval() é uma falha grave de segurança que permite execução de código arbitrário.	
+
+Prompt de Segurança: "Explique-me como processar entradas numéricas dinâmicas sem utilizar eval(), preferindo conversões explícitas com int() ou float()."	Vídeo print(), input() e eval() & Curso Intensivo de Python
+Referência de Listas Multidimensionais	Inicializar matrizes usando multiplicação como [[0]*3]*3 cria referências rasas, fazendo com que alterar uma célula modifique toda a coluna.
+
+Prompt de Boas Práticas: "Como criar listas multidimensionais independentes sem efeitos colaterais de referência de memória?"	Vídeo Listas Multidimensionais & Python Eficaz (uso de List Comprehensions)
+
+Gargalo de Memória vs. List Comprehensions	Em grandes volumes de dados (ex: automação de arquivos), list comprehensions comuns consomem muita RAM ao carregar tudo na memória de uma vez.	
+
+Prompt de Otimização: "Substitua minhas list comprehensions por expressões geradoras (generators) e explique a economia de memória em nível de processo."	Python Eficaz (Item 19: Expressões Geradoras) & Pense em Python
+Uso de print() para Depuração	A IA inicialmente sugeriu colocar diversos prints pelo código para rastrear erros, o que polui o código de produção.	
+
+Prompt de Monitoramento: "Não faça debug com print(). Estruture o código utilizando o módulo nativo logging com diferentes níveis (INFO, DEBUG, ERROR)."	Vídeo Depuração de programas & Automatize Tarefas Maçantes
 
 📖 Miniguia de Estudos de Python (Resultado Consolidado)
 
