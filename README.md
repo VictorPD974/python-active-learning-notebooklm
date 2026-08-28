@@ -18,7 +18,9 @@ Domínio da Lógica e Sintaxe Acadêmica: Consolidar desde a base de algoritmos,
 Adoção de Boas Práticas (Código Pythonic): Escrever código limpo de nível profissional, focando em legibilidade, performance de execução e eficiência de memória.
 Prática de Automação de Sistemas: Aplicar scripts para automação de tarefas cotidianas de escritório (leitura de planilhas Excel, manipulação de PDFs/Word, raspagem de dados web e automação de interface).
 Engenharia de Prompts: Documentar a interação ativa e estratégica com a IA, detalhando as "cicatrizes" e os refinamentos feitos nas instruções para extrair o melhor resultado do modelo.
+
 📚 Curadoria Temática de Fontes (26 Fontes Organizadas)
+
 Para garantir que o material cobrisse toda a trilha pedagógica de Python sem poluir o repositório, as 26 fontes integradas ao NotebookLM foram agrupadas em três eixos temáticos estruturados. Desta forma, o material cobre desde a teoria de algoritmos até as melhores práticas de desenvolvimento corporativo:
 
 🎓 1. Eixo Acadêmico (Curso "Algoritmos e Programação de Computadores I" - 21 Videoaulas)
@@ -34,15 +36,19 @@ Coleções e Manipulação: Listas, Tuplas e Operadores, Listas Multidimensionai
 Prática e Arquitetura: Definição de Funções, Biblioteca Padrão Python, Depuração de Programas, Documentação de Programas, Programas em Python, print(), input() e eval(), Sobre Python.
 
 📖 2. Eixo de Literatura Técnica Especializada (4 Livros-Base)
-Livros de cabeceira de programadores seniores que fornecem a prática ativa e o refinamento do design de código:
+Livros de cabeceira de programadores seniores que fornecem a prática ativa e o refinamento do design de código e podem ser acessados no próprio repositório:
 
 Pense em Python (2ª Edição) (Allen B. Downey): Aborda a transição entre pensar como humano e pensar como um cientista da computação. Introduz termos como scaffolding e depuração com pato de borracha.
+
 Curso Intensivo de Python (Eric Matthes): Focado em projetos práticos de desenvolvimento de software e ciência de dados.
+
 Automatize Tarefas Maçantes com Python (Al Sweigart): Focado em scripts utilitários de automação de escritório (Excel, PDFs, Web Scraping e pyautogui).
+
 Python Eficaz (Brett Slatkin): Focado em escrever código "Pythônico" sênior, utilizando geradores, controle de memória e boas práticas de concorrência.
 
 🌐 3. Eixo de Referência Oficial (1 Canal de Documentação)
 Documentação Oficial (Python.org): O ponto central para verificar atualizações, novas especificações de sintaxe e guias de estilo da linguagem (PEP 8).
+
 🛠️ Engenharia de Prompts e "Cicatrizes" (Troubleshooting)
 Abaixo estão registrados os prompts estratégicos testados e as dificuldades encontradas ao longo do processo de modelagem da IA para o papel de "Professor Socrático".
 
@@ -60,7 +66,9 @@ A Armadilha do eval()	Videoaulas ensinam eval() para avaliar expressões rapidam
 Referência de Listas Multidimensionais	Inicializar matrizes usando multiplicação como [[0]*3]*3 cria referências rasas, fazendo com que alterar uma célula modifique toda a coluna.	Prompt de Boas Práticas: "Como criar listas multidimensionais independentes sem efeitos colaterais de referência de memória?"	Vídeo Listas Multidimensionais & Python Eficaz (uso de List Comprehensions)
 Gargalo de Memória vs. List Comprehensions	Em grandes volumes de dados (ex: automação de arquivos), list comprehensions comuns consomem muita RAM ao carregar tudo na memória de uma vez.	Prompt de Otimização: "Substitua minhas list comprehensions por expressões geradoras (generators) e explique a economia de memória em nível de processo."	Python Eficaz (Item 19: Expressões Geradoras) & Pense em Python
 Uso de print() para Depuração	A IA inicialmente sugeriu colocar diversos prints pelo código para rastrear erros, o que polui o código de produção.	Prompt de Monitoramento: "Não faça debug com print(). Estruture o código utilizando o módulo nativo logging com diferentes níveis (INFO, DEBUG, ERROR)."	Vídeo Depuração de programas & Automatize Tarefas Maçantes
+
 📖 Miniguia de Estudos de Python (Resultado Consolidado)
+
 🗺️ Roteiro de Estudos em 4 Fases
 
 📍 Fase 1: Sintaxe, Fluxo de Controle e Fundamentos Algorítmicos
