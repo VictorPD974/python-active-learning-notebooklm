@@ -2,6 +2,8 @@
 
 🚀 Professor IA de Python: Metodologia de Aprendizagem Ativa com NotebookLM
 
+Disponível em: https://notebook.google.com/notebook/5e38df8c-f6de-4723-979d-4609e901a597
+
 Este repositório foi desenvolvido como entrega oficial para o Desafio de Projeto da DIO (Digital Innovation One), cujo objetivo é explorar o uso de Inteligência Artificial como uma ferramenta estratégica de aprendizagem ativa e curadoria de conhecimento.
 
 Aqui, estruturamos um Professor IA de Python utilizando o NotebookLM da Google. O modelo foi abastecido com uma curadoria robusta de 26 fontes técnicas de nível universitário e profissional, permitindo simular sessões de mentoria de alta performance, projetar um cronograma de estudos personalizado e estruturar resoluções de problemas em tempo real.
